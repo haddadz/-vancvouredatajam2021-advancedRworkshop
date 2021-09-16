@@ -1,0 +1,40 @@
+
+---
+title: "00-Agenda"
+output:
+  html_document:
+    toc: true
+---
+
+
+```{r}
+%md
+
+![tdsp-lifecycle2_resize.png|3441x2567,20%](https://bn1303files.storage.live.com/y4p4leKSKueEHy35vz8TvPYpqR0I03zOCf3xBKuk_6ez3HrR3KI9diwGt-RsPA-tRlneQnpYDFVqJCobv6LgVh7pFb5_FpprCwP_ntXVt0lZYh6EKbOeBsz4dGTgs6OdvJmoWTNUK6k8jBvmf6_lYs86HX94bjXlwE1WB3e7S9Bf3HQlVg4PxI0PL-rR-BlguBA/advancedr.png?psid=1&width=804&height=640) 
+
+```
+
+
+```{r}
+%md
+#Agenda
+- Introduction
+- Pre-workshop
+  - Setup  (Link to materials/slides/code & my reop)
+  - Links (Databricks, Azure Notebooks, RStudio Cloud or Ziggy)
+- Content
+ - Intro to Data Science and Machine learning (Unsupervised)
+ - Clustering (K-means)
+ - Dimensionality Reduction (PCA)
+ - Practice datasets/Evaluate Models (metrics)
+ - Resources
+
+```
+
+
+# Schedule
+- 9:00 - 9:50 R environment setup (Databricks) and Intro to ML and Decision trees
+- 10 min break
+- 10:00 - 10:50  Intro to Random Forest and going through some examples
+- 10 min break
+- 11:00 - 11:55  Going through some examples on your own and time for questions
