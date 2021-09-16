@@ -1,14 +1,14 @@
-# Datajam 2020 Advanced R workshop
-# Vancouver Datajam 2020 - Advanced R Workshop on Decision Trees and Random Forest
+# Datajam 2021 Advanced R workshop
+# Vancouver Datajam 2021 - R Workshop - special topic: Machine Learning
 ##  By Zaid Haddad
-##  Sep 11, 2020
+##  Sep 18, 2021
 
 ## Link
-https://docs.google.com/document/d/1qcGO1fLM0XrOQpICRWmllP4iKKaZQ6ZlZ78wUdhIYfg/edit?ts=5f4aa978#
+<>
 
 ### Advanced R workshop   
 - Mainly using R 
-- This workshop will be focused on Decision Trees and Random Forest
+- This workshop will be focused on Unsupservised learning
 
 ![alt text](https://github.com/haddadz/vancvouredatajam-advancedRworkshop/blob/master/images/advancedr.png?raw=true)
 
