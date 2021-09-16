@@ -10,8 +10,6 @@ output:
 ```{r}
 %md
 
-![tdsp-lifecycle2_resize.png|3441x2567,20%](https://bn1303files.storage.live.com/y4p4leKSKueEHy35vz8TvPYpqR0I03zOCf3xBKuk_6ez3HrR3KI9diwGt-RsPA-tRlneQnpYDFVqJCobv6LgVh7pFb5_FpprCwP_ntXVt0lZYh6EKbOeBsz4dGTgs6OdvJmoWTNUK6k8jBvmf6_lYs86HX94bjXlwE1WB3e7S9Bf3HQlVg4PxI0PL-rR-BlguBA/advancedr.png?psid=1&width=804&height=640) 
-
 ```
 
 
