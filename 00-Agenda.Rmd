@@ -31,8 +31,8 @@ output:
 
 
 # Schedule
-- 9:00 - 9:50 R environment setup (Databricks) and Intro to ML and Decision trees
+- 9:00 - 9:50 R environment setup (Databricks) and Intro to ML and Unsupervised learning
 - 10 min break
-- 10:00 - 10:50  Intro to Random Forest and going through some examples
+- 10:00 - 10:50  Intro to Clustering (K-means) and going through some examples
 - 10 min break
-- 11:00 - 11:55  Going through some examples on your own and time for questions
+- 11:00 - 11:55  Intro to Dimensionality Reduction (PCA) and going through some examples
