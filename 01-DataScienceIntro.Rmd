@@ -1,0 +1,208 @@
+
+---
+title: "01-DataScienceIntro"
+output:
+  html_document:
+    toc: true
+---
+
+# Quick intro to Data Science
+##  By Zaid Haddad
+##  Sep 18, 2021
+
+```{r}
+%md
+##About me:
+- Data Scientist Leader at Slalom.     
+- Previous experience in Cannabis, biotech and molecular diagnostics fields developing and validating end to end ML models. 
+- BSc - CMPT & Microbiology/biochemistry from SFU.      
+- At Vancouver Datajam 2021, I will be teaching R Workshop - special topic: Machine Learning.    
+- Pronouns: he/him.
+
+### Check out Slalom's career page:
+- https://www.slalom.com/careers
+
+```
+
+
+```{r}
+%md
+## Feel free to connect, follow and ask questions
+
+####LinkedIn: in/zaid-haddad    https://www.linkedin.com/in/zaid-haddad/        
+####Twitter:  @zaid_ha         
+####Github:  haddadz      https://github.com/haddadz
+```
+
+
+### Advanced R workshop   
+- Mainly using R 
+- This workshop will be focused on Unsupervised learning
+- Assuming some stats background and geared towards advanced R users
+- Assuming basic knowledge of R and the tidyverse package
+
+```{r}
+%md
+## What is and is NOT covered here?
+- Covered:
+  - Intro to Unsupervised Learning
+- Not Covered:
+  - End to end machine learning
+  - Data pre-processing
+```
+
+
+```{r}
+%md
+####For Databricks community editition users, let's head to Databricks and spin up the cluster (install packages). 
+####For local RStudio users, get your packages ready. 
+
+## Once done, introduce yourself on Discord
+```
+
+# What is Data Science?
+
+- Data Analytics, Data Mining, Stats, Big Data, **ML**, Predictive Analytics?
+- Data Science is: making sense of Data
+- Data Science is: multidisciplinary (Stats, Math, CS, Domain Experts)
+
+
+## Data Science Lifecycle
+- Cross-industry standard process for data mining, known as CRISP-DM    
+
+
+![Data-Mining-Lifecycle.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CRISP-DM_Process_Diagram.png/600px-CRISP-DM_Process_Diagram.png)
+
+```{r}
+%md 
+```
+
+
+```{r}
+%md
+
+#TDSP
+###The Team Data Science Process (TDSP) is an agile, iterative data science methodology to deliver predictive analytics solutions and intelligent applications efficiently
+
+<!-- ![tdsp-lifecycle2_resize.png|3441x2567,20%](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/overview/tdsp-lifecycle2.png) -->
+
+<img width="800" alt="tdsp-lifecycle2_resize" src="https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/media/overview/tdsp-lifecycle2.png">
+```
+
+
+```{r}
+%md 
+```
+
+## Machine Learning
+
+* According to Arthur Samuel, Machine Learning algorithms enable the computers to **learn from data**, and even improve themselves, without being explicitly programmed.
+                         
+### Types of Machine Learning:    
+* Supervised Learning       
+    -  Classification (spam or not spam; disease or not)    
+    -  Regression (value for dollars or weight)     
+* Unsupervised Learning          
+    -  Clustering (inheret grouping in data)    
+    -  Association (rules describing your data; people that buy X also tend to buy Y)    
+* Reinforcement Learning         
+A reinforcement learning algorithm, or agent, learns by interacting with its environment.
+## Common Examples
+
+-  Classification and class probability estimation: Cancer or Benign?
+-  Regression: How much will you use the service?
+-  Similarity Matching: Recommender systems/similarity
+-  Clustering: Can you find natural groups in your data set?
+## Applications of Data Science
+- Fraud and Risk Detection
+- Healthcare
+- Internet Search
+- Targeted Advertising
+- Website Recommendations
+- Advanced Image Recognition
+- Speech Recognition
+- Airline Route Planning
+- Gaming
+- Augmented Reality
+- Sales forecast
+
+```{r}
+%md
+
+## Deployment
+
+#### Won't focus on this right now
+
+
+Some examples - Deployments depends on the application:
+- Machine Learning Server in MS SQL 2017 (R&Python; Cloud (VM) and on-prem)
+- Containers and Orchestration (Docker/Keubernetes and Aks)
+- cortex.dev (AWS, Docker and EKS)
+- ML Ops (Azure)
+- Databricks
+
+
+
+
+
+```
+
+# Data Science Hype
+
+- Lack of clear definition
+- Hype is crazy and data science is a hot market - some people throwing phrases as if data science is Master of Universe
+- Data science is not just a rebranding of statistics or machine learning but rather a field unto itself
+- “Anything that has to call itself a science isn’t.”
+
+## Getting Past the Hype
+
+### Why Now?
+- massive amounts of data
+- growing influence of data in most sectors and most industries
+
+```{r}
+%md
+
+#THE DATA SCIENCE VENN DIAGRAM - Drew Conway
+
+![dnds_0101.png](https://images.squarespace-cdn.com/content/v1/5150aec6e4b0e340ec52710a/1364352051365-HZAS3CLBF7ABLE3F5OBY/ke17ZwdGBToddI8pDm48kB2M2-8_3EzuSSXvzQBRsa1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxPe_8B-x4gq2tfVez1FwLYYZXud0o-3jV-FAs7tmkMHY-a7GzQZKbHRGZboWC-fOc/Data_Science_VD.png?format=750w)
+```
+
+### References:
+
+- https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining
+- https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/lifecycle
+- http://homepages.vub.ac.be/~tiasguns/      
+- https://machinelearningmastery.com/finalize-machine-learning-models-in-r/      
+- https://www.geeksforgeeks.org/introduction-machine-learning-using-python/      
+- https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12  
+- http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
+- https://towardsdatascience.com/a-modification-of-drew-conways-data-science-venn-diagram-d5ba93037e1a
+- https://medium.com/swlh/cluster-analysis-with-iris-data-set-a7c4dd5f5d0
+- https://www.kaggle.com/khotijahs1/k-means-clustering-of-iris-dataset
+- https://rpubs.com/williamsurles/310847
+- https://lgatto.github.io/IntroMachineLearningWithR/unsupervised-learning.html#hierarchical-clustering
+- https://bradleyboehmke.github.io/HOML/intro.html#data
+
+```{r}
+%md
+## Additional resources
+
+### Youtube channels for databricks
+- https://www.youtube.com/channel/UC3q8O3Bh2Le8Rj1-Q-_UUbA
+
+### Key to Always practice (one example: kaggle)
+- https://www.kaggle.com/
+
+### Meetups (Vancouver)
+- R-Ladies Vancouver  https://www.meetup.com/rladies-vancouver/
+- Learn Data Science   https://www.meetup.com/LearnDataScience/
+- Women Who Code Vancouver   https://www.meetup.com/Women-Who-Code-Vancouver/
+- PyLadies Vancouver   https://www.meetup.com/PyLadies-Vancouver/
+
+### Books and additiontal resources
+- Big Book of R https://www.bigbookofr.com/index.html
+- How Do I Get Started? Machine Learning Mastery  https://machinelearningmastery.com/start-here/
+
+```
+
