@@ -3,8 +3,8 @@
 ##  By Zaid Haddad
 ##  Sep 18, 2021
 
-## Link
-<>
+## Link to Vancouver Data Jam 2021 Workshops
+https://www.vancouverdatajam.ca/workshops
 
 ### Advanced R workshop   
 - Mainly using R 
@@ -19,11 +19,13 @@ https://rstudio.com/products/rstudio/download/
 - Option 3: Databricks Community edition (free sign-up)
 https://community.cloud.databricks.com/
 - R Packages and datasets:
- - R Packages: install.packages(c("mlbench","rpart.plot", “caret”, “rpart”, “e1071”, “randomForest”, “tidyverse”))
- - Datasets: iris, Car Evaluation, Sonar
+ - R Packages: install.packages(c("cluster","reshape2","dplyr","stringr", "cluster" ,“tidyverse”))
+ - Datasets: iris, mtcars, my_baskter
   - Source of UCI ML repo: https://archive.ics.uci.edu/ml/index.php
+  - mtcars datasets: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
+  - My Basket dataset: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
   - Workshop code and slides will be available on Friday:
-https://github.com/haddadz/vancvouredatajam-advancedRworkshop
+https://github.com/haddadz/-vancvouredatajam2021-advancedRworkshop/
 
 
 ## References
@@ -55,9 +57,9 @@ https://github.com/haddadz/vancvouredatajam-advancedRworkshop
 
 ## Datasets
 
-1- Datasets: Iris, Car Evaluation, PimaIndiansDiabetes2, Boston         
-2- UCI ML repo: https://archive.ics.uci.edu/ml/index.php    
-3- https://rdrr.io/cran/mlbench/man/PimaIndiansDiabetes.html   
-4- https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html    
+Datasets: iris, mtcars, my_baskter
+  - Source of UCI ML repo: https://archive.ics.uci.edu/ml/index.php
+  - mtcars datasets: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
+  - My Basket dataset: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
 
 
