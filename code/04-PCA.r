@@ -186,7 +186,7 @@ biplot(prcomp(mtcars, scale = TRUE), main = "With scaling") ## 2
 # MAGIC # Final comments on PCA
 # MAGIC Real datasets often come with missing values. In R, these should be encoded using NA. Unfortunately, PCA cannot deal with missing values, and observations containing NA values will be dropped automatically. This is a viable solution only when the proportion of missing values is low.
 # MAGIC 
-# MAGIC It is also possible to impute missing values. This is described in greater details in the Data pre-processing section in the supervised machine learning chapter.
+# MAGIC It is also possible to impute missing values. This is described in greater details in the Data pre-processing tutorials.
 # MAGIC 
 # MAGIC Finally, we should be careful when using categorical data in any of the unsupervised methods described above. Categories are generally represented as factors, which are encoded as integer levels, and might give the impression that a distance between levels is a relevant measure (which it is not, unless the factors are ordered). In such situations, categorical data can be dropped, or it is possible to encode categories as binary dummy variables. For example, if we have 3 categories, say A, B and C, we would create two dummy variables to encode the categories as:
 

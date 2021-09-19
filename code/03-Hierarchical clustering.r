@@ -111,9 +111,9 @@ table(iris$Species, cutree(hcl, k = 3))
 
 # MAGIC %md
 # MAGIC ### Pre-processing
-# MAGIC Many of the machine learning methods that are regularly used are sensitive to difference scales. This applies to unsupervised methods as well as supervised methods, as we will see in the next chapter.
+# MAGIC Many of the machine learning methods that are regularly used are sensitive to difference scales. This applies to unsupervised methods as well as supervised methods, as we will see in the notebook.
 # MAGIC 
-# MAGIC A typical way to pre-process the data prior to learning is to scale the data, or apply principal component analysis (next section). Scaling assures that all data columns have a mean of 0 and standard deviation of 1.
+# MAGIC A typical way to pre-process the data prior to learning is to scale the data, or apply principal component analysis (next notebook). Scaling assures that all data columns have a mean of 0 and standard deviation of 1.
 # MAGIC 
 # MAGIC In R, scaling is done with the scale function.
 # MAGIC 

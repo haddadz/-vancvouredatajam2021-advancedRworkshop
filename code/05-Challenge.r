@@ -17,13 +17,14 @@ library(cluster)     # for general clustering algorithms
 
 # MAGIC %md
 # MAGIC 
-# MAGIC Grocery items and quantities purchased. Each observation represents a single basket of goods that were purchased together.
-# MAGIC Problem type: unsupervised basket analysis
-# MAGIC response variable: NA
-# MAGIC features: 42
-# MAGIC observations: 2,000
-# MAGIC objective: use attributes of each basket to identify common groupings of items purchased together.
-# MAGIC access: available on the companion website for this book
+# MAGIC - Grocery items and quantities purchased. 
+# MAGIC - Each observation represents a single basket of goods that were purchased together.
+# MAGIC - Problem type: unsupervised basket analysis
+# MAGIC - response variable: NA
+# MAGIC - features: 42
+# MAGIC - observations: 2,000
+# MAGIC - objective: use attributes of each basket to identify common groupings of items purchased together.
+# MAGIC - access: available on the Github link below
 
 # COMMAND ----------
 
@@ -39,11 +40,6 @@ dim(my_basket)
 
 # Peek at response variable
 my_basket
-
-# COMMAND ----------
-
-url <- "https://koalaverse.github.io/homlr/data/my_basket.csv"
-my_basket <- readr::read_csv(url)
 
 # COMMAND ----------
 
@@ -69,4 +65,84 @@ plot(1:25, wss, type = "b",
 
 # COMMAND ----------
 
+##the elbow point ?
+##Apply kmeans function to the feature columns
+set.seed(123)
+km <- kmeans( x = my_basket , centers = 5)
+yclus <- km$cluster
+table(yclus)
 
+# COMMAND ----------
+
+#the kmeans has grouped the data into three clusters- 1, 2 & 3 having 50, 62 & 38 observations respectively.
+#Visualize the kmeans clusters
+
+clusplot(my_basket,
+ yclus,
+ lines = 0,
+ shade = TRUE,
+ color = TRUE,
+ labels = 0,
+ plotchar = FALSE,
+ span = TRUE,
+ main = paste('Clusters of My Data Set')
+)
+
+# COMMAND ----------
+
+?hclust
+
+# COMMAND ----------
+
+?dist
+
+
+# COMMAND ----------
+
+d <- dist(my_basket)
+hcl <- hclust(d, method='ward.D')
+hcl
+
+# COMMAND ----------
+
+plot(hcl)
+
+# COMMAND ----------
+
+cutree(hcl, k = 5)
+
+
+# COMMAND ----------
+
+plot(hcl)
+abline(h = 130, col = "red")
+
+# COMMAND ----------
+
+d <- dist(my_basket, method='maximum')
+hcl <- hclust(d, method='ward.D')
+hcl
+
+# COMMAND ----------
+
+plot(hcl)
+
+# COMMAND ----------
+
+d <- dist(my_basket, method='manhattan')
+hcl <- hclust(d, method='ward.D')
+hcl
+
+# COMMAND ----------
+
+plot(hcl)
+
+# COMMAND ----------
+
+d <- dist(my_basket, method='maximum')
+hcl <- hclust(d, method='complete')
+hcl
+
+# COMMAND ----------
+
+plot(hcl)
