@@ -3,6 +3,8 @@
 ##  By Zaid Haddad
 ##  Sep 18, 2021
 
+![https://media.discordapp.net/attachments/886379272468561920/886381553993789450/datajamforesthexblue.png|3441x2567,20%](https://media.discordapp.net/attachments/886379272468561920/886381553993789450/datajamforesthexblue.png?psid=1&width=320&height=320) 
+
 ## Link to Vancouver Data Jam 2021 Workshops
 https://www.vancouverdatajam.ca/workshops
 
