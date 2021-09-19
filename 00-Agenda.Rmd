@@ -10,6 +10,8 @@ output:
 ```{r}
 %md
 
+![https://media.discordapp.net/attachments/886379272468561920/886381553993789450/datajamforesthexblue.png|3441x2567,20%](https://media.discordapp.net/attachments/886379272468561920/886381553993789450/datajamforesthexblue.png?psid=1&width=320&height=320) 
+
 ```
 
 
@@ -22,17 +24,17 @@ output:
   - Links (Databricks, Azure Notebooks, RStudio Cloud or Ziggy)
 - Content
  - Intro to Data Science and Machine learning (Unsupervised)
- - Clustering (K-means)
+ - Clustering (K-means, Hierarchical)
  - Dimensionality Reduction (PCA)
- - Practice datasets/Evaluate Models (metrics)
+ - Practice datasets
  - Resources
 
 ```
 
 
 # Schedule
-- 9:00 - 9:50 R environment setup (Databricks) and Intro to ML and Unsupervised learning
+- 9:00 - 9:50 R environment setup (Databricks) and Intro to ML and Unsupervised learning & Clustering
 - 10 min break
-- 10:00 - 10:50  Intro to Clustering (K-means) and going through some examples
+- 10:00 - 10:50  Cont'd Intro to Clustering (K-means, Hierarchical) and going through some examples
 - 10 min break
 - 11:00 - 11:55  Intro to Dimensionality Reduction (PCA) and going through some examples

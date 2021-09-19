@@ -28,13 +28,14 @@ library(cluster)     # for general clustering algorithms
 ```{r}
 %md
 
-Grocery items and quantities purchased. Each observation represents a single basket of goods that were purchased together.
-Problem type: unsupervised basket analysis
-response variable: NA
-features: 42
-observations: 2,000
-objective: use attributes of each basket to identify common groupings of items purchased together.
-access: available on the companion website for this book
+- Grocery items and quantities purchased. 
+- Each observation represents a single basket of goods that were purchased together.
+- Problem type: unsupervised basket analysis
+- response variable: NA
+- features: 42
+- observations: 2,000
+- objective: use attributes of each basket to identify common groupings of items purchased together.
+- access: available on the Github link below
 ```
 
 
@@ -51,12 +52,6 @@ dim(my_basket)
 
 # Peek at response variable
 my_basket
-```
-
-
-```{r}
-url <- "https://koalaverse.github.io/homlr/data/my_basket.csv"
-my_basket <- readr::read_csv(url)
 ```
 
 
@@ -85,6 +80,99 @@ plot(1:25, wss, type = "b",
 
 
 ```{r}
+##the elbow point ?
+##Apply kmeans function to the feature columns
+set.seed(123)
+km <- kmeans( x = my_basket , centers = 5)
+yclus <- km$cluster
+table(yclus)
+```
 
+
+```{r}
+#the kmeans has grouped the data into three clusters- 1, 2 & 3 having 50, 62 & 38 observations respectively.
+#Visualize the kmeans clusters
+
+clusplot(my_basket,
+ yclus,
+ lines = 0,
+ shade = TRUE,
+ color = TRUE,
+ labels = 0,
+ plotchar = FALSE,
+ span = TRUE,
+ main = paste('Clusters of My Data Set')
+)
+```
+
+
+```{r}
+?hclust
+```
+
+
+```{r}
+?dist
+
+```
+
+
+```{r}
+d <- dist(my_basket)
+hcl <- hclust(d, method='ward.D')
+hcl
+```
+
+
+```{r}
+plot(hcl)
+```
+
+
+```{r}
+cutree(hcl, k = 5)
+
+```
+
+
+```{r}
+plot(hcl)
+abline(h = 130, col = "red")
+```
+
+
+```{r}
+d <- dist(my_basket, method='maximum')
+hcl <- hclust(d, method='ward.D')
+hcl
+```
+
+
+```{r}
+plot(hcl)
+```
+
+
+```{r}
+d <- dist(my_basket, method='manhattan')
+hcl <- hclust(d, method='ward.D')
+hcl
+```
+
+
+```{r}
+plot(hcl)
+```
+
+
+```{r}
+d <- dist(my_basket, method='maximum')
+hcl <- hclust(d, method='complete')
+hcl
+```
+
+
+```{r}
+plot(hcl)
 ```
 
